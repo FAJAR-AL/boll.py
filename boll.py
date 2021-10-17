@@ -84,7 +84,95 @@ def banner():
  [%s*%s] IP : %s%s
 '''%(H,K,H,K,H,K,H,K,H,K,P,K,P,H,P,K,P,K,P,H,IP))
 
-# MASUK TOKEN (TOKEN BAKWAN)
+
+#!/usr/bin/python2
+# coding=utf-8
+# coding by Romi Afrizal
+# Note : jangan di ubah lagi! nanti error, script udah enak
+# Open source code team | ngotak dikit cok jangan jual di perjual belikan 
+
+Hj = '\x1b[1;92m' 
+Mt = '\x1b[0m' 
+ingfo = (
+"""%s
+ • Info script :
+ 	
+ - author      : Romi Afrizal
+ - facebook    : facebook.com/romi.afrizal.102
+ - fanspage    : facebook.com/100022086172556
+ - whatsap     : +6282371648186
+ - github      : github.com/Mark-Zuck
+ - script name : bff-2
+ - version     : 1.1
+ 
+%s"""%(Hj,Mt))
+
+import os
+try:
+    import requests
+except ImportError:
+    os.system('pip2 install requests')
+try:
+    import concurrent.futures
+except ImportError:
+    os.system('pip2 install futures')
+try:
+    import bs4
+except ImportError:
+    os.system('pip2 install bs4')
+    
+import requests, os, re, bs4, sys, json, time, random, datetime, subprocess, logging, base64
+from concurrent.futures import ThreadPoolExecutor 
+from bs4 import BeautifulSoup as parser
+from time import sleep as jeda
+from datetime import datetime
+exec(base64.b64decode('Y3QgPSBkYXRldGltZS5ub3coKQ0KbiA9IGN0Lm1vbnRoDQpidWxhbjEgPSB7IjAxIjogIkphbnVhcmkiLCAiMDIiOiAiRmVicnVhcmkiLCAiMDMiOiAiTWFyZXQiLCAiMDQiOiAiQXByaWwiLCAiMDUiOiAiTWVpIiwgIjA2IjogIkp1bmkiLCAiMDciOiAiSnVsaSIsICIwOCI6ICJBZ3VzdHVzIiwgIjA5IjogIlNlcHRlbWJlciIsICIxMCI6ICJPa3RvYmVyIiwgIjExIjogIk5vdmVtYmVyIiwgIjEyIjogIkRlc2VtYmVyIn0NCmJ1bGFuID0gWydKYW51YXJpJywgJ0ZlYnJ1YXJpJywgJ01hcmV0JywgJ0FwcmlsJywgJ01laScsICdKdW5pJywgJ0p1bGknLCAnQWd1c3R1cycsICdTZXB0ZW1iZXInLCAnT2t0b2JlcicsICdOb3ZlbWJlcicsICdEZXNlbWJlciddDQp0cnk6DQogICAgaWYgbiA8IDAgb3IgbiA+IDEyOg0KICAgICAgICBleGl0KCkNCiAgICBuVGVtcCA9IG4gLSAxDQpleGNlcHQgVmFsdWVFcnJvcjoNCiAgICBleGl0KCkNCg0KY3VycmVudCA9IGRhdGV0aW1lLm5vdygpDQp0YSA9IGN1cnJlbnQueWVhcg0KYnUgPSBjdXJyZW50Lm1vbnRoDQpoYSA9IGN1cnJlbnQuZGF5DQpvcCA9IGJ1bGFuW25UZW1wXQ0KcmVsb2FkKHN5cykNCnN5cy5zZXRkZWZhdWx0ZW5jb2RpbmcoJ3V0Zi04JykNCiMgS1VNUFVMQU4gV0FSTkENCk0gPSAnXHgxYlsxOzkxbScgIyBNRVJBSA0KSCA9ICdceDFiWzE7OTJtJyAjIEhJSkFVDQpLID0gJ1x4MWJbMTs5M20nICMgS1VOSU5HDQpCID0gJ1x4MWJbMTs5NG0nICMgQklSVQ0KVSA9ICdceDFiWzE7OTVtJyAjIFVOR1UNCk8gPSAnXHgxYlsxOzk2bScgIyBCSVJVIE1VREENClAgPSAnXHgxYlsxOzk3bScgIyBQVVRJSA0KTiA9ICdceDFiWzBtJyAjIFdBUk5BIE1BVEkNCmFjYWsgPSBbTSwgSCwgSywgQiwgVSwgTywgUF0NCndhcm5hID0gcmFuZG9tLmNob2ljZShhY2FrKQ0KdGlsID0i4oCiIg=='))
+
+ok = []
+cp = []
+id = []
+user = []
+loop = 0
+
+def jalan(z):
+    for e in z + '\n':
+        sys.stdout.write(e)
+        sys.stdout.flush();jeda(0.03)
+
+def tik():
+    titik = ['.   ','..  ','... ']
+    for o in titik:
+        print ('\r%s%s menghapus token %s'%(M,til,o)),
+        sys.stdout.flush();jeda(1)
+        
+def folder():
+	try:os.mkdir('hasil')
+	except:pass
+	try:os.mkdir('data')
+	except:pass
+	try:
+		ua_ = 'Mozilla/5.0 (Linux; Android 10; Mi 9T Pro Build/QKQ1.190825.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/88.0.4324.181 Mobile Safari/537.36[FBAN/EMA;FBLC/it_IT;FBAV/239.0.0.10.109;]'
+		open("data/ua.txt","w").write(ua_)
+	except:
+		pass
+        
+# LOGO (LO GOBLOK)
+IP = requests.get('https://api.ipify.org').text
+def banner():
+	print (''' %s 
+ © Group%s
+ __________       _____.__ 
+ \____    /____ _/ ____\__| %s> %sZona
+   /     /\\__  \\\   __\|  | %s> %sAkun 
+  /     /_ / __ \|  |  |  | %s>%s Facebook
+ /_______ (____  /__|  |__| %s>%s Indonesia
+         \/    \/ 
+ %s[%s*%s] By : %sRomi Afrizal
+ %s[%s*%s] --------------------------------------
+ [%s*%s] IP : %s%s
+'''%(H,K,H,K,H,K,H,K,H,K,P,K,P,H,P,K,P,K,P,H,IP))
+
+# MASUK TOKEN (TOKEN LISTRIK)
 header = {"x-fb-connection-bandwidth": str(random.randint(20000000.0, 30000000.0)), "x-fb-sim-hni": str(random.randint(20000, 40000)), "x-fb-net-hni": str(random.randint(20000, 40000)), "x-fb-connection-quality": "EXCELLENT", "x-fb-connection-type": "cell.CTRadioAccessTechnologyHSDPA", "user-agent": "NokiaC3-00/5.0 (07.20) Profile/MIDP-2.1 Configuration/CLDC-1.1 Mozilla/5.0 AppleWebKit/420+ (KHTML, like Gecko) Safari/420+ ;]", "content-type": "application/x-www-form-urlencoded", "x-fb-http-engine": "Liger"}
 def masuk():
     os.system('clear');banner()
