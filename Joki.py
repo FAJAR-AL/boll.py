@@ -74,13 +74,13 @@ IP = requests.get('https://api.ipify.org').text
 def banner():
 	print (''' %s 
  © Group%s
- __________       _____.__ 
- \____    /____ _/ ____\__| %s> %sZona
-   /     /\\__  \\\   __\|  | %s> %sAkun 
-  /     /_ / __ \|  |  |  | %s>%s Facebook
- /_______ (____  /__|  |__| %s>%s Indonesia
-         \/    \/ 
- %s[%s*%s] By : %sRomi Afrizal
+ .______       __  ____    ____  ___      .__   __. 
+|   _  \     |  | \   \  /   / /   \     |  \ |  | 
+|  |_)  |    |  |  \   \/   / /  ^  \    |   \|  | 
+|      /     |  |   \_    _/ /  /_\  \   |  . `  | 
+|  |\  \----.|  |     |  |  /  _____  \  |  |\   | 
+| _| `._____||__|     |__| /__/     \__\ |__| \__| 
+ %s[%s*%s] By : %sRiyandika Fajar S
  %s[%s*%s] --------------------------------------
  [%s*%s] IP : %s%s
 '''%(H,K,H,K,H,K,H,K,H,K,P,K,P,H,P,K,P,K,P,H,IP))
@@ -144,16 +144,16 @@ def menu():
     except requests.exceptions.ConnectionError:
         exit("%s [!] Kesalahan koneksi "%(M))
     banner()
-    print (' %s[ welcome %s%s%s ] \n'%(P,K,nama,P))
+    print (' %s[ monggo mas %s%s%s ] \n'%(P,K,nama,P))
     print (' [%s01%s] Dump id public'%(K,P)) 
     print (' [%s02%s] Dump id followers'%(K,P)) 
     print (' [%s03%s] Dump id reaction post'%(K,P)) 
-    print (' [%s04%s] %sStart crack %s'%(K,P,H,P)) 
+    print (' [%s04%s] %sStart maling %s'%(K,P,H,P)) 
     print (' [%s05%s] Ganti user agent'%(K,P)) 
     print (' [%s06%s] Cek hasil crack'%(K,P)) 
     #print (' [%s07%s] Gabung group'%(K,P))
     #print (' [%s08%s] Info script'%(K,P))
-    print (' [%s00%s] Keluar (hapus token)'%(M,P))
+    print (' [%s00%s] Metu (hapus token)'%(M,P))
     unik = raw_input('\n%s [?] Menu : %s'%(P,K))
     if unik == '':
         print("%s [!] Isi yang benar kentod "%(M));jeda(2);menu()
@@ -289,7 +289,7 @@ def postingan(romz,headers=header):
         exit('\n %s[!] gagal dump id'%(P))
 
 
-# START CRACK
+# START MALING
 class ngentod:
 
     def __init__(self):
@@ -301,7 +301,7 @@ class ngentod:
             self.id = open(self.apk).read().splitlines()
             print '%s [%s*%s] jumlah id : %s%s' %(P,K,P,H,len(self.id))
         except:
-            print '\n%s [!] File dump tidak ada, dump id dulu kentod'%(M)
+            print '\n%s [!] File dump tidak ada, dump id dulu sayang'%(M)
             raw_input('\n%s [ %senter %s] '%(P,K,P));menu()
         unikers = raw_input('%s [?] ingin gunakan password manual? [y/t] :%s '%(P,K))
         if unikers in ('Y', 'y'):
