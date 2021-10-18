@@ -73,7 +73,7 @@ def folder():
 IP = requests.get('https://api.ipify.org').text
 def banner():
 	print (''' %s 
- © Riyandika fajar s%s
+ © group%s
  
   ____            _           _ 
  | __ )  __ _  __| |_ __ ___ | |
