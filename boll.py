@@ -17,7 +17,7 @@ ingfo = (
  - github      : github.com/Mark-Zuck
  - script name : bff-2
  - version     : 1.1
- - recode by :Fajar-Al
+ 
 %s"""%(Hj,Mt))
 
 import os
