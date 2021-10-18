@@ -74,42 +74,13 @@ IP = requests.get('https://api.ipify.org').text
 def banner():
 	print (''' %s 
  © Group%s
-
-  ███████████████████████████████
-████╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬████
-██╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬██
-█╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬█
-█╬╬╬███████╬╬╬╬╬╬╬╬╬███████╬╬╬█
-█╬╬██╬╬╬╬███╬╬╬╬╬╬╬███╬╬╬╬██╬╬█
-█╬██╬╬╬╬╬╬╬██╬╬╬╬╬██╬╬╬╬╬╬╬██╬█
-█╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬█
-█╬╬╬╬█████╬╬╬╬╬╬╬╬╬╬╬█████╬╬╬╬█
-█╬╬█████████╬╬╬╬╬╬╬█████████╬╬█
-█╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬█
-█╬╬╬╬╬╬╬╬╬╬╬╬╬╬█╬╬╬╬╬╬╬╬╬╬╬╬╬╬█
-█╬╬╬╬╬╬╬╬╬╬╬╬╬╬█╬╬╬╬╬╬╬╬╬╬╬╬╬╬█
-█╬╬╬╬╬╬╬╬╬╬╬╬╬╬█╬╬╬╬╬╬╬╬╬╬╬╬╬╬█
-█╬╬╬▓▓▓▓╬╬╬╬╬╬╬█╬╬╬╬╬╬╬▓▓▓▓╬╬╬█
-█╬╬▓▓▓▓▓▓╬╬█╬╬╬█╬╬╬█╬╬▓▓▓▓▓▓╬╬█
-█╬╬╬▓▓▓▓╬╬██╬╬╬█╬╬╬██╬╬▓▓▓▓╬╬╬█
-█╬╬╬╬╬╬╬╬██╬╬╬╬█╬╬╬╬██╬╬╬╬╬╬╬╬█
-█╬╬╬╬╬████╬╬╬╬███╬╬╬╬████╬╬╬╬╬█
-█╬╬╬╬╬╬╬╬╬╬╬╬╬███╬╬╬╬╬╬╬╬╬╬╬╬╬█
-██╬╬█╬╬╬╬╬╬╬╬█████╬╬╬╬╬╬╬╬█╬╬██
-██╬╬██╬╬╬╬╬╬███████╬╬╬╬╬╬██╬╬██
-██╬╬▓███╬╬╬████╬████╬╬╬███▓╬╬██
-███╬╬▓▓███████╬╬╬███████▓▓╬╬███
-███╬╬╬╬▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓╬╬╬╬███
-████╬╬╬╬╬╬╬╬╬╬███╬╬╬╬╬╬╬╬╬╬████
-█████╬╬╬╬╬╬╬╬╬╬█╬╬╬╬╬╬╬╬╬╬█████
-██████╬╬╬╬╬╬╬╬███╬╬╬╬╬╬╬╬██████
-███████╬╬╬╬╬╬╬███╬╬╬╬╬╬╬███████
-████████╬╬╬╬╬╬███╬╬╬╬╬╬████████
-█████████╬╬╬╬╬███╬╬╬╬╬█████████
-███████████╬╬╬╬█╬╬╬╬███████████
-███████████████████████████████
+ __________       _____.__ 
+ \____    /____ _/ ____\__| %s> %sZona
+   /     /\\__  \\\   __\|  | %s> %sAkun 
+  /     /_ / __ \|  |  |  | %s>%s Facebook
+ /_______ (____  /__|  |__| %s>%s Indonesia
          \/    \/ 
- %s[%s*%s] By : %sRiyandika Fajar S
+ %s[%s*%s] By : %sRomi Afrizal
  %s[%s*%s] --------------------------------------
  [%s*%s] IP : %s%s
 '''%(H,K,H,K,H,K,H,K,H,K,P,K,P,H,P,K,P,K,P,H,IP))
@@ -173,16 +144,16 @@ def menu():
     except requests.exceptions.ConnectionError:
         exit("%s [!] Kesalahan koneksi "%(M))
     banner()
-    print (' %s[ riyan emang %s%s%s ] \n'%(P,K,nama,P))
-    print (' [%s01%s] Dump id publik'%(K,P)) 
+    print (' %s[ welcome %s%s%s ] \n'%(P,K,nama,P))
+    print (' [%s01%s] Dump id public'%(K,P)) 
     print (' [%s02%s] Dump id followers'%(K,P)) 
     print (' [%s03%s] Dump id reaction post'%(K,P)) 
-    print (' [%s04%s] %sGas maling %s'%(K,P,H,P)) 
-    print (' [%s05%s] Ganti bojo'%(K,P)) 
-    print (' [%s06%s] Cek hasil maling'%(K,P)) 
+    print (' [%s04%s] %sStart crack %s'%(K,P,H,P)) 
+    print (' [%s05%s] Ganti user agent'%(K,P)) 
+    print (' [%s06%s] Cek hasil crack'%(K,P)) 
     #print (' [%s07%s] Gabung group'%(K,P))
     #print (' [%s08%s] Info script'%(K,P))
-    print (' [%s00%s] Murtad (hapus token)'%(M,P))
+    print (' [%s00%s] Keluar (hapus token)'%(M,P))
     unik = raw_input('\n%s [?] Menu : %s'%(P,K))
     if unik == '':
         print("%s [!] Isi yang benar kentod "%(M));jeda(2);menu()
@@ -203,7 +174,7 @@ def menu():
             for file in dirs:
                 print("%s -> %s%s"%(K,P,file));jeda(0.2)
             print("\n %s[%s!%s] cth : CP-%s-%s-%s%s"%(P,M,P,ha,op,ta,".txt"))
-            file = raw_input("%s [?] masukan file dump : "%(P));jeda(0.2)
+            file = raw_input("%s [?] masukan file : "%(P));jeda(0.2)
             if file == "":
                 print("%s [!] file tidak ada "%(M))
             total = open("hasil/%s"%(file)).read().splitlines()
@@ -238,7 +209,7 @@ def publik(romz,headers=header):
         os.mkdir('dump')
     except:pass
     try:
-    	print ("\n%s [%s!%s] Ketik '%sme%s' jika ingin dump konco dewe "%(P,M,P,H,P))
+    	print ("\n%s [%s!%s] Ketik '%sme%s' jika ingin dump daftar teman sendiri "%(P,M,P,H,P))
         idt = raw_input(' [*] Target id : %s'%(K))
         gas = requests.get('https://graph.facebook.com/%s?access_token=%s'%(idt,romz))
         nm = json.loads(gas.text)
@@ -253,12 +224,12 @@ def publik(romz,headers=header):
             sys.stdout.flush();jeda(0.0050)
 
         bff.close()
-        print ('\n\n %s[%s√%s] Sukses dump id dari %s%s'%(P,H,P,H,nm['name']))
-        print ('%s [%s√%s] File dump kesimpen :%s %s '%(P,H,P,H,file))
+        print ('\n\n %s[%s√%s] Succes dump id dari %s%s'%(P,H,P,H,nm['name']))
+        print ('%s [%s√%s] File dump tersimpan :%s %s '%(P,H,P,H,file))
         raw_input('\n%s [ %senter %s] '%(P,K,P))
         menu()
     except Exception as e:
-        exit('\n %s[!] gagal,jangan ngamok'%(P))
+        exit('\n %s[!] gagal dump id'%(P))
 
 # DUMP FOLLOWERS
 def followers(romz,headers=header):
