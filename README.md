@@ -1,2 +1,2 @@
-# boll.py
+# ayam.py
 SC CRACK BOLL AYAM
